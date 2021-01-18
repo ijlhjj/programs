@@ -15,9 +15,16 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+		<!-- 依赖包版本号 -->
+		<utils.version>0.0.1</utils.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.sweetmanor</groupId>
+			<artifactId>utils</artifactId>
+			<version> ${utils.version}</version>
+		</dependency>
 		<!-- 测试依赖 -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
